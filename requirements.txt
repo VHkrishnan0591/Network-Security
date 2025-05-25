@@ -1,0 +1,14 @@
+python-dotenv
+numpy
+pandas
+pymongo[srv]
+certifi
+pyyaml
+notebook
+python-box
+seaborn
+matplotlib
+scikit-learn
+scipy
+mlflow
+streamlit

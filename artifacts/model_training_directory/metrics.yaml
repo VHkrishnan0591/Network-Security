@@ -1,0 +1,164 @@
+2025-05-25 17:04:09.725182:
+  AdaBoost:
+    Accuracy: 0.926729986431479
+    Classification Report: "              precision    recall  f1-score   support\n\
+      \n        -1.0       0.93      0.90      0.91       956\n         1.0      \
+      \ 0.93      0.94      0.94      1255\n\n    accuracy                       \
+      \    0.93      2211\n   macro avg       0.93      0.92      0.93      2211\n\
+      weighted avg       0.93      0.93      0.93      2211\n"
+    Confusion Matrix: !!python/object/apply:numpy._core.multiarray._reconstruct
+      args:
+      - &id001 !!python/name:numpy.ndarray ''
+      - !!python/tuple
+        - 0
+      - !!binary |
+        Yg==
+      state: !!python/tuple
+      - 1
+      - !!python/tuple
+        - 2
+        - 2
+      - &id002 !!python/object/apply:numpy.dtype
+        args:
+        - i8
+        - false
+        - true
+        state: !!python/tuple
+        - 3
+        - <
+        - null
+        - null
+        - null
+        - -1
+        - -1
+        - 0
+      - false
+      - !!binary |
+        YAMAAAAAAABcAAAAAAAAAEYAAAAAAAAAoQQAAAAAAAA=
+    F1 Score: 0.9360189573459715
+    Recall: 0.9442231075697212
+  Decision Tree:
+    Accuracy: 0.994572591587517
+    Classification Report: "              precision    recall  f1-score   support\n\
+      \n        -1.0       0.99      1.00      0.99       956\n         1.0      \
+      \ 1.00      0.99      1.00      1255\n\n    accuracy                       \
+      \    0.99      2211\n   macro avg       0.99      0.99      0.99      2211\n\
+      weighted avg       0.99      0.99      0.99      2211\n"
+    Confusion Matrix: !!python/object/apply:numpy._core.multiarray._reconstruct
+      args:
+      - *id001
+      - !!python/tuple
+        - 0
+      - !!binary |
+        Yg==
+      state: !!python/tuple
+      - 1
+      - !!python/tuple
+        - 2
+        - 2
+      - *id002
+      - false
+      - !!binary |
+        uQMAAAAAAAADAAAAAAAAAAkAAAAAAAAA3gQAAAAAAAA=
+    F1 Score: 0.9952076677316294
+    Recall: 0.9928286852589642
+  Gradient Boosting:
+    Accuracy: 0.9561284486657621
+    Classification Report: "              precision    recall  f1-score   support\n\
+      \n        -1.0       0.96      0.94      0.95       956\n         1.0      \
+      \ 0.95      0.97      0.96      1255\n\n    accuracy                       \
+      \    0.96      2211\n   macro avg       0.96      0.95      0.96      2211\n\
+      weighted avg       0.96      0.96      0.96      2211\n"
+    Confusion Matrix: !!python/object/apply:numpy._core.multiarray._reconstruct
+      args:
+      - *id001
+      - !!python/tuple
+        - 0
+      - !!binary |
+        Yg==
+      state: !!python/tuple
+      - 1
+      - !!python/tuple
+        - 2
+        - 2
+      - *id002
+      - false
+      - !!binary |
+        fwMAAAAAAAA9AAAAAAAAACQAAAAAAAAAwwQAAAAAAAA=
+    F1 Score: 0.9617357001972386
+    Recall: 0.9713147410358566
+  Logistic Regression:
+    Accuracy: 0.926729986431479
+    Classification Report: "              precision    recall  f1-score   support\n\
+      \n        -1.0       0.93      0.90      0.91       956\n         1.0      \
+      \ 0.93      0.94      0.94      1255\n\n    accuracy                       \
+      \    0.93      2211\n   macro avg       0.93      0.92      0.93      2211\n\
+      weighted avg       0.93      0.93      0.93      2211\n"
+    Confusion Matrix: !!python/object/apply:numpy._core.multiarray._reconstruct
+      args:
+      - *id001
+      - !!python/tuple
+        - 0
+      - !!binary |
+        Yg==
+      state: !!python/tuple
+      - 1
+      - !!python/tuple
+        - 2
+        - 2
+      - *id002
+      - false
+      - !!binary |
+        YAMAAAAAAABcAAAAAAAAAEYAAAAAAAAAoQQAAAAAAAA=
+    F1 Score: 0.9360189573459715
+    Recall: 0.9442231075697212
+  Random Forest:
+    Accuracy: 0.994572591587517
+    Classification Report: "              precision    recall  f1-score   support\n\
+      \n        -1.0       0.99      0.99      0.99       956\n         1.0      \
+      \ 0.99      1.00      1.00      1255\n\n    accuracy                       \
+      \    0.99      2211\n   macro avg       0.99      0.99      0.99      2211\n\
+      weighted avg       0.99      0.99      0.99      2211\n"
+    Confusion Matrix: !!python/object/apply:numpy._core.multiarray._reconstruct
+      args:
+      - *id001
+      - !!python/tuple
+        - 0
+      - !!binary |
+        Yg==
+      state: !!python/tuple
+      - 1
+      - !!python/tuple
+        - 2
+        - 2
+      - *id002
+      - false
+      - !!binary |
+        tQMAAAAAAAAHAAAAAAAAAAUAAAAAAAAA4gQAAAAAAAA=
+    F1 Score: 0.9952229299363057
+    Recall: 0.9960159362549801
+  Random ForestHyperParameter_tuned:
+    Accuracy: 0.95838986883763
+    Classification Report: "              precision    recall  f1-score   support\n\
+      \n        -1.0       0.97      0.93      0.95       956\n         1.0      \
+      \ 0.95      0.98      0.96      1255\n\n    accuracy                       \
+      \    0.96      2211\n   macro avg       0.96      0.95      0.96      2211\n\
+      weighted avg       0.96      0.96      0.96      2211\n"
+    Confusion Matrix: !!python/object/apply:numpy._core.multiarray._reconstruct
+      args:
+      - *id001
+      - !!python/tuple
+        - 0
+      - !!binary |
+        Yg==
+      state: !!python/tuple
+      - 1
+      - !!python/tuple
+        - 2
+        - 2
+      - *id002
+      - false
+      - !!binary |
+        eQMAAAAAAABDAAAAAAAAABkAAAAAAAAAzgQAAAAAAAA=
+    F1 Score: 0.9639498432601881
+    Recall: 0.9800796812749004
