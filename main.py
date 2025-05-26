@@ -1,6 +1,7 @@
 from src.logging.logger import logger
 from src.pipeline.data_ingestion_pipeline import DataIngestionPipeline
 from src.pipeline.data_validation_pipeline import DataValidationPipeline
+from src.entity.config_entity import DataTransformationArtifact
 from src.pipeline.data_transformation_pipeline import DataTransformationPipeline
 from src.pipeline.model_training_pipeline import ModelTrainingPipeline
 
