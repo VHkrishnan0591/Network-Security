@@ -28,7 +28,6 @@ class ModelTraining():
         self.metrics= {}
     
     def evaluate_models(self, y_pred,model_name,model):
-        metrics ={}
         f1 = f1_score(self.y_test, y_pred)
         recall = recall_score(self.y_test, y_pred)
         model_accuracy = (accuracy_score(self.y_test, y_pred))
