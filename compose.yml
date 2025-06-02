@@ -19,6 +19,7 @@ services:
   
   streamlit:
     build: .
+    image: ecr-network-security:latest
     ports:
       - "8501:8501"
     depends_on:
