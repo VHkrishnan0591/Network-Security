@@ -43,6 +43,13 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+      
+      - name: Mask AWS credentials (optional, for extra safety)
+        run: |
+          echo "::add-mask::${{ secrets.AWS_ACCESS_KEY_ID }}"
+          echo "::add-mask::${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+          echo "::add-mask::${{ secrets.AWS_REGION }}"
+
 
       - name: Install Utilities
         run: |
