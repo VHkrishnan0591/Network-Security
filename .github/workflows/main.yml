@@ -44,13 +44,6 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
       
-      - name: Mask AWS credentials (optional, for extra safety)
-        run: |
-          echo "::add-mask::${{ secrets.AWS_ACCESS_KEY_ID }}"
-          echo "::add-mask::${{ secrets.AWS_SECRET_ACCESS_KEY }}"
-          echo "::add-mask::${{ secrets.AWS_REGION }}"
-
-
       - name: Install Utilities
         run: |
           sudo apt-get update
@@ -65,5 +58,12 @@ jobs:
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Mask Docker Password
+        if: steps.login-ecr.outputs.docker-password
+        run: echo "::add-mask::${{ steps.login-ecr.outputs.docker-password }}"
 
       
