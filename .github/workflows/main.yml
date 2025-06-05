@@ -110,7 +110,7 @@ jobs:
          docker pull ${{secrets.AWS_ECR_LOGIN_URI}}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
       - name: Stop and remove old containers
         run: |
-         docker compose down --remove-orphans
+         docker compose  down --remove-orphans
       - name: Run Docker Image to serve users
         run: |
          docker compose up -d
